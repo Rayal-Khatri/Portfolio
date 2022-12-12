@@ -124,3 +124,8 @@ img
     display: grid;
     gap:1.5rem;
 }
+.newclass
+{
+    height:20px;
+    font-family : var(--body-font);
+}
