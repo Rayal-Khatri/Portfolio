@@ -169,7 +169,7 @@ img
     .nav_menu
     {
         position: fixed;
-        bottom: 0;
+        bottom: -100%;
         left: 0;
         width: 100%;
         background-color: var(--body-color);
@@ -198,3 +198,22 @@ img
 {
     color: var(--first-color);
 }
+
+.nav_icon
+{
+    font-size: 1.2rem;
+}
+.nav_close
+{
+    position: absolute;
+    right: 1.3rem;
+    bottom: 0.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--first-color);
+}
+.nav_close:hover
+{
+    color: var(--first-color-alt);
+}
+
