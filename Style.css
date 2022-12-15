@@ -217,3 +217,7 @@ img
     color: var(--first-color-alt);
 }
 
+.show_menu
+{
+    bottom: 0;
+}
