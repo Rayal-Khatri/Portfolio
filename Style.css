@@ -105,6 +105,7 @@ img
 .section_subtitle
 {
     display: block;
+    text-align: center;
     font-size: var(--small-font-size);
     margin-bottom: var(--mb-3);
 }
