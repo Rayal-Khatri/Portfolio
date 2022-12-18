@@ -96,7 +96,8 @@ img
 
 .section
 {
-    padding: 2rem 0 4rem;
+    margin-top: 0;
+    padding: 0rem 0 4rem;
 }
 .section_title
 {
@@ -105,18 +106,17 @@ img
 .section_subtitle
 {
     display: block;
-    text-align: center;
     font-size: var(--small-font-size);
     margin-bottom: var(--mb-3);
 }
-.section_title,section_subtitle
+.section_title, .section_subtitle
 {
     text-align: center;
 }
 
 .container
 {
-    max-width: 768px;
+    max-width: 769px;
     margin-left: var(--mb-1-5);
     margin-right: var(--mb-1-5);
 }
