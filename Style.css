@@ -416,6 +416,7 @@ img
 }
 .skills_list
 {
+    transition: .3s;
     row-gap: 1.5rem;
     padding-left: 2.7rem;
 }
@@ -436,6 +437,7 @@ img
     height: 5px;
     border-radius: .25rem;
 }
+
 .skills_bar
 {
     background-color: var(--first-color-lighter);
