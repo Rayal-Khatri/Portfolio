@@ -567,3 +567,12 @@ img
     background-color: var(--first-color);
     transform: translate(6px,-7px);
 }
+.qualification_content 
+{
+    display: none;
+}
+.qualification_active 
+{
+    /* border: 2px solid black; */
+    display: block;
+}
