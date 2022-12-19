@@ -119,6 +119,7 @@ img
     max-width: 769px;
     margin-left: var(--mb-1-5);
     margin-right: var(--mb-1-5);
+
 }
 .grid
 {
@@ -226,8 +227,7 @@ img
 /* HOME STYLING */
 .home_container
 {
-    gap: 1rem
-    ;
+    gap: 1rem;
 }
 .home_content
 {
@@ -526,6 +526,7 @@ img
 {
     font-size: 1.8rem;
     margin-right: var(--mb-0-25);
+    border: 2px solid black;
 }
 .qualification_data
 {
@@ -547,5 +548,22 @@ img
 
 .qualification_calender
 {
-    font-size: var(--small-font-size);
+    font-size: var(--smaller-font-size);
+    color:var(--first-color-lighter);
+}
+.qualification_rounder
+{
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-color: var(--first-color);
+    border-radius: 50%;
+}
+.qualification_line
+{
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: var(--first-color);
+    transform: translate(6px,-7px);
 }
