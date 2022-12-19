@@ -116,6 +116,7 @@ img
 
 .container
 {
+    border: 2px solid black;
     max-width: 769px;
     margin-left: var(--mb-1-5);
     margin-right: var(--mb-1-5);
@@ -574,4 +575,13 @@ img
 {
     /* border: 2px solid black; */
     display: block;
+}
+
+.qualification_button.qualification_active
+{
+    color: var(--first-color);
+}
+.services_button
+{
+    /* width: 9rem; */
 }
