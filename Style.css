@@ -526,7 +526,6 @@ img
 {
     font-size: 1.8rem;
     margin-right: var(--mb-0-25);
-    border: 2px solid black;
 }
 .qualification_data
 {
@@ -549,7 +548,7 @@ img
 .qualification_calender
 {
     font-size: var(--smaller-font-size);
-    color:var(--first-color-lighter);
+    color:var(--first-color-light);
 }
 .qualification_rounder
 {
@@ -567,11 +566,11 @@ img
     background-color: var(--first-color);
     transform: translate(6px,-7px);
 }
-.qualification_content 
+.qualification [data-content]
 {
     display: none;
 }
-.qualification_active 
+.qualification_active[data-content]
 {
     /* border: 2px solid black; */
     display: block;
