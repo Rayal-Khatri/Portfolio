@@ -116,7 +116,7 @@ img
 
 .container
 {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     max-width: 769px;
     margin-left: var(--mb-1-5);
     margin-right: var(--mb-1-5);
@@ -581,7 +581,24 @@ img
 {
     color: var(--first-color);
 }
-.services_button
+
+/* SERVICES */
+.services_container
 {
-    /* width: 9rem; */
+    gap: 1.5rem;
+    grid-template-columns: repeat(2,1fr);
 }
+.services_content
+{
+    position: relative;
+    background-color: var(--container-color);
+    padding: 3.5rem .5rem 1.25rem 1.5rem;
+    border-radius: .25rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,.15);
+    transition: .3s;
+}
+.services_content:hover
+{
+    box-shadow: 0 4px 8px rgba(0, 0,0,.15);
+}
+
