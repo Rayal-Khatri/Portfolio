@@ -2,7 +2,7 @@
 
 :root {
     --header-height: 3rem;
-    --hue-color: 142;
+    --hue-color: 230;
     /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
     --first-color: hsl(var(--hue-color), 69%, 61%);
     --first-color-second: hsl(var(--hue-color), 69%, 61%);
@@ -323,7 +323,13 @@ img {
     display: inline-flex;
     align-items: center;
 }
-
+.button_white{
+    background-color: white;
+    color: var(--first-color);
+}
+.button_white:hover{
+    background-color: whitesmoke;
+}
 .button_small {
     padding: .7rem 1rem;
 }
@@ -724,10 +730,10 @@ img {
 }
 
 .swiper-container-horizontal > .swiper-pagination-bullets{
-    bottom: -2.5rem!important;
+    bottom: -2.5rem;
 }
 .swiper-pagination-bullet-active{
-    background-color: var(--first-color)!important;
+    background-color: var(--first-color);
 }
 
 .swiper {
@@ -756,3 +762,29 @@ img {
     font-size: 3rem;
   }
   
+  .project{
+    text-align: center;
+  }
+
+  .project_bg{
+    background-color: var(--first-color-second);
+    padding-top: 3rem;
+  }
+
+  .project_title{
+    font-size: var(--h2-font-size);
+    margin-bottom: var(--mb-00-75);
+  }
+
+  .project_description{
+    margin-bottom: var(--mb-1-5);
+  }
+
+  .project_title,
+  .project_description{
+    color: white;
+  }
+  .project_img{
+    width: 234px;
+    justify-self: center;
+  }
