@@ -788,3 +788,41 @@ img {
     width: 234px;
     justify-self: center;
   }
+
+  .testimonial_data,
+  .testimonial_header{
+    display: flex;
+  }
+
+  .testimonial_data{
+    justify-content: space-between;
+    margin-bottom: var(--mb-1);
+  }
+
+  .testimonial_img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: var(--mb-00-75);
+  }
+
+  .testimonial_name{
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+  }
+
+  .testimonial_client{
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+  }
+
+  .testimonial_description{
+    margin-bottom: var(--mb-2-5);
+  }
+  .testimonial_icon{
+    color: var(--first-color);
+  }
+
+  .swiper-container .swiper-pagination_testimonial{
+    bottom: 0;
+  }

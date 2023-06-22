@@ -82,11 +82,12 @@ modalCloses.forEach((modalClose) => {
 // Wait for the DOM to load
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize Swiper
-    const swiper = new Swiper('.swiper', {
+    const swiperPortfolio = new Swiper('.portfolio_container', {
       // Configure Swiper options here
       slidesPerView: 1,
       spaceBetween: 20,
       loop: true, 
+    //   cssMode: true,
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -98,6 +99,34 @@ document.addEventListener('DOMContentLoaded', function() {
       scrollbar: {
         el: '.swiper-scrollbar',
       },
+    });
+  });
+
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    const swiperTestimonial = new Swiper('.testimonial_container', {
+      // Configure Swiper options here
+      slidesPerView: 1,
+      spaceBetween: 48,
+      loop: true, 
+      grabCursor: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        dynamicBullets:true
+      },
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+      breakpoints:{
+        568:{
+            slidesPerView: 2,
+        }
+      }
     });
   });
   
