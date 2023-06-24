@@ -217,6 +217,9 @@ img {
     bottom: 0;
 }
 
+.active_link{
+    color: var(--first-color);
+}
 /* HOME STYLING */
 .home_container {
     gap: 1rem;
@@ -691,6 +694,7 @@ img {
 
 .portfolio_content {
     padding: 0 1.5rem;
+    transform: translateX(-1rem);
 }
 
 .portfolio_img {
@@ -720,7 +724,8 @@ img {
 .swiper-portfolio-icon{
     font-size: 2rem;
     color: var(--first-color);
-    transform: translateY(.5rem);
+    transform: translateY(-.9rem);
+    transform: translateX(-1rem);
 }
 .swiper_button_next{
     right: -5rem;
@@ -826,3 +831,97 @@ img {
   .swiper-container .swiper-pagination_testimonial{
     bottom: 0;
   }
+
+  .contact_container{
+    row-gap: 3rem;
+  }
+  .contact_information{
+    display: flex;
+    margin-bottom: var(--mb-2);
+  }
+
+  .contact_icon{
+    font-size: 2rem;
+    color: var(--first-color);
+    margin-right: var(--mb-00-75);
+  }
+
+  .contact_title{
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+  }
+
+  .contact_subtitle{
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+  }
+
+  .contact_content{
+    background-color: var(--input-color);
+    border-radius: .5rem;
+    padding: .75rem 1rem .25rem;
+  }
+
+  .contact_label{
+    font-size: var(--smaller-font-size);
+    color: var(--title-color);
+  }
+
+  .contact_input{
+    width:100%;
+    background-color: var(--input-color);
+    color: var(--text-color);
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    border: none;
+    outline: none;
+    padding: .25rem .5rem .5rem 0;
+  }
+
+   .footer{
+    padding-top: 2rem;
+   }
+   .footer_bg{
+    background-color: var(--first-color-second);
+    padding: 2rem 0 3rem;
+   }
+
+   .footer_titile{
+    font-size: var(--h1-font-size);
+    margin-bottom: var(--mb-0-25);
+   }
+
+   .footer_subtitle{
+    font-size: var(--small-font-size);
+   }
+   .footer_links{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+   }
+   .footer_link:hover{
+    color: var(--first-color-lighter);
+   }
+
+   .footer_social{
+    font-size: 1.25rem;
+    margin-right: var(--mb-1-5);
+   }
+
+   .footer:social:hover{
+    color: var(--first-color-lighter);
+   }
+
+   .footer_copy
+   {
+    font-size: var(--smaller-font-size);
+    text-align: center;
+    color: var(--text-color-light);
+    margin-top: var(--mb-3);
+   }
+   .footer_title,
+   .footer_subtitle,
+   .footer_link,
+   .footer_social{
+        color: white;
+   }

@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', function() {
       // Configure Swiper options here
       slidesPerView: 1,
       spaceBetween: 48,
-      loop: true, 
+    //   loop: true, 
       grabCursor: true,
       navigation: {
         nextEl: '.swiper-button-next',
@@ -129,4 +129,25 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
+  
+
+  const sections = document.querySelectorAll('section[id]')
+
+  function scrollActive() {
+    const scrollY = window.pageYOffset
+  
+    sections.forEach(current => {
+      const sectionHeight = current.offsetHeight
+      const sectionTop = current.offsetTop - 50
+      const sectionId = current.getAttribute('id')
+  
+      if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+        document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.add('active_link')
+      } else {
+        document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.remove('active_link')
+      }
+    })
+  }
+  
+  window.addEventListener('scroll', scrollActive)
   
