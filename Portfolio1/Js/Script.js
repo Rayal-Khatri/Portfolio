@@ -102,33 +102,46 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    const swiperTestimonial = new Swiper('.testimonial_container', {
-      // Configure Swiper options here
-      slidesPerView: 1,
-      spaceBetween: 48,
-    //   loop: true, 
-      grabCursor: true,
+    let swiper = new Swiper('.portfolio_container',{
+      cssMode: true,
       navigation: {
         nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        prevE1: '.swiper-button-prev',
       },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-        dynamicBullets:true
+      pagination:{
+        el:'.swiper-pagination'
       },
-      scrollbar: {
-        el: '.swiper-scrollbar',
-      },
-      breakpoints:{
-        568:{
-            slidesPerView: 2,
-        }
-      }
-    });
-  });
+      mousewheel: true,
+      keyboard: true,
+      loop: true,   
+    })
+  
+  // document.addEventListener('DOMContentLoaded', function() {
+  //   const swiperTestimonial = new Swiper('.testimonial_container', {
+  //     // Configure Swiper options here
+  //     slidesPerView: 1,
+  //     spaceBetween: 48,
+  //   //   loop: true, 
+  //     grabCursor: true,
+  //     navigation: {
+  //       nextEl: '.swiper-button-next',
+  //       prevEl: '.swiper-button-prev',
+  //     },
+  //     pagination: {
+  //       el: '.swiper-pagination',
+  //       clickable: true,
+  //       dynamicBullets:true
+  //     },
+  //     scrollbar: {
+  //       el: '.swiper-scrollbar',
+  //     },
+  //     breakpoints:{
+  //       568:{
+  //           slidesPerView: 2,
+  //       }
+  //     }
+  //   });
+  // });
   
 
   const sections = document.querySelectorAll('section[id]')
